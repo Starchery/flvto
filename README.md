@@ -33,6 +33,8 @@ If you are on windows, the youtube-dl download also includes Python. Place it in
 
 Simply run the `flvto.exe` in the `dist` folder. 
 
+You can also run it by calling `λ python flvto.py`.
+
 If you want to be able to run it from the terminal, add `flvto\dist\` to your [path.](https://en.wikipedia.org/wiki/PATH_%28variable%29)
 
 # CONFIGURATION
