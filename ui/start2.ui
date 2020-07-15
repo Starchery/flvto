@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>735</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MPy3</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/music.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/music.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="widgetVLayout">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="mainTab">
+          <property name="acceptDrops">
+           <bool>true</bool>
+          </property>
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/music.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/music.svg</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Main</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="mainTabVLayout">
+           <item>
+            <layout class="QVBoxLayout" name="mainVLayout">
+             <item>
+              <layout class="QHBoxLayout" name="mainBannerHLayout">
+               <item>
+                <widget class="QLabel" name="mainBannerLogo">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../../../Zafiro-icons/Zafiro-icons/apps/scalable/music.svg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="mainBannerTitle">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;MPy3&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Video converter&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:small; font-weight:600;&quot;&gt;Version 1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="mainFormVLayout">
+               <item>
+                <widget class="QFrame" name="mainFormFrame">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="mainFormFrameLayout">
+                  <property name="spacing">
+                   <number>9</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>9</number>
+                  </property>
+                  <item>
+                   <layout class="QVBoxLayout" name="mainFormInnerVLayout">
+                    <item>
+                     <widget class="QLabel" name="mainEnterUrlLabel">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;
+&lt;head/&gt;
+&lt;body&gt;
+	&lt;p&gt;
+	&lt;span style=&quot; font-size:12pt;&quot;&gt;Enter a video URL to convert&lt;/span&gt;
+	&lt;/p&gt;
+
+	&lt;p&gt;
+	&lt;span style=&quot; font-style:italic; color:#5a5a5a;&quot;&gt;(example: https://www.youtube.com/watchv?fakevideourl)
+	&lt;/span&gt;
+	&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+                      </property>
+                      <property name="textFormat">
+                       <enum>Qt::AutoText</enum>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                      </property>
+                      <property name="buddy">
+                       <cstring>mainUrlLine</cstring>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="mainUrlLine">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="mainSaveToLabel">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Save to</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="mainFormFileHLayout">
+                      <item>
+                       <widget class="QComboBox" name="mainPathCombo">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QToolButton" name="mainPathBrowseBtn">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Browse...</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="mainDownloadBtn">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Download</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="transfersTab">
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../Zafiro-icons/Zafiro-icons/panel/22-light/connect_established.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/panel/22-light/connect_established.svg</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Transfers</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="transfersTabVLayout">
+           <item>
+            <layout class="QVBoxLayout" name="transfersVLayout">
+             <item>
+              <layout class="QHBoxLayout" name="transfersPanesHLayout">
+               <item>
+                <layout class="QHBoxLayout" name="transfersTreeHLayout">
+                 <item>
+                  <widget class="QListWidget" name="transfersTreeList">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="transfersListVLayout">
+                 <item>
+                  <layout class="QVBoxLayout" name="transfersListBtnsVLayout">
+                   <item>
+                    <layout class="QHBoxLayout" name="transfersListBtnsHLayout">
+                     <item>
+                      <widget class="QPushButton" name="transfersAddBtn">
+                       <property name="text">
+                        <string>Add</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="transfersRemoveBtn">
+                       <property name="text">
+                        <string>Remove</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="transfersPauseBtn">
+                       <property name="text">
+                        <string>Pause</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="transfersStopBtn">
+                       <property name="text">
+                        <string>Stop</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QFrame" name="transfersInfoFrame">
+               <property name="autoFillBackground">
+                <bool>true</bool>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <layout class="QVBoxLayout" name="transfersInfoVLayout">
+                <item>
+                 <layout class="QHBoxLayout" name="transfersBarHLayout">
+                  <item>
+                   <widget class="QLabel" name="transfersBarLabel">
+                    <property name="text">
+                     <string>Progress:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QProgressBar" name="transfersBar">
+                    <property name="value">
+                     <number>0</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="Line" name="line">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="transfersInfoGBox">
+                  <property name="title">
+                   <string>Information</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="transfersInfoGBoxLayout">
+                   <item>
+                    <widget class="QLabel" name="transfersInfoParagraph">
+                     <property name="text">
+                      <string>Placeholder Text&lt;br&gt;Placeholder Text&lt;br&gt;Placeholder Text</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>735</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAdd_Video"/>
+    <addaction name="actionAdd_Playlist"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionResume"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionResume_All"/>
+    <addaction name="actionPause_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuLog">
+     <property name="title">
+      <string>Log</string>
+     </property>
+     <addaction name="actionShow"/>
+     <addaction name="separator"/>
+     <addaction name="actionNormal"/>
+     <addaction name="actionVerbose"/>
+     <addaction name="actionWarning_Messages"/>
+     <addaction name="actionCritical_Messages"/>
+    </widget>
+    <addaction name="actionStatistics"/>
+    <addaction name="menuLog"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd_Video"/>
+   <addaction name="separator"/>
+   <addaction name="actionResume"/>
+   <addaction name="actionPause"/>
+   <addaction name="separator"/>
+   <addaction name="actionSettings"/>
+  </widget>
+  <action name="actionAdd_Video">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Zafiro-icons/Zafiro-icons/categories/22/applications-multimedia.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/categories/22/applications-multimedia.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add Video</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAdd_Playlist">
+   <property name="text">
+    <string>Add Playlist</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionResume">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Zafiro-icons/Zafiro-icons/actions/22/media-playback-start.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/actions/22/media-playback-start.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Resume</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Zafiro-icons/Zafiro-icons/actions/22/media-playback-pause.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/actions/22/media-playback-pause.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionResume_All">
+   <property name="text">
+    <string>Resume All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionPause_All">
+   <property name="text">
+    <string>Pause All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionShow">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Normal Messages</string>
+   </property>
+  </action>
+  <action name="actionVerbose">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Information Messages</string>
+   </property>
+  </action>
+  <action name="actionWarning_Messages">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Warning Messages</string>
+   </property>
+  </action>
+  <action name="actionCritical_Messages">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Critical Messages</string>
+   </property>
+  </action>
+  <action name="actionStatistics">
+   <property name="text">
+    <string>Statistics</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/control-center2.svg</normaloff>../../../Zafiro-icons/Zafiro-icons/apps/scalable/control-center2.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>transfersRemoveBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>tableWidget</receiver>
+   <slot>clearSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>474</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mainUrlLine</sender>
+   <signal>returnPressed()</signal>
+   <receiver>mainDownloadBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>570</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellActivated(int,int)</signal>
+   <receiver>transfersBar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>464</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellActivated(int,int)</signal>
+   <receiver>transfersInfoGBox</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
